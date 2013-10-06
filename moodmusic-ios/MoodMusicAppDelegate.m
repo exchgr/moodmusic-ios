@@ -7,6 +7,7 @@
 //
 
 #import "MoodMusicAppDelegate.h"
+#import "MoodMusicJawboneUPConnectViewController.h"
 
 @implementation MoodMusicAppDelegate
 
@@ -18,6 +19,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    MoodMusicJawboneUPConnectViewController *jawboneUPConnectVC = [[MoodMusicJawboneUPConnectViewController alloc] init];
+    
+    [[self window] setRootViewController:jawboneUPConnectVC];
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

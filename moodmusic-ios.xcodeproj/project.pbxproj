@@ -22,6 +22,9 @@
 		2F59FFE81800EFD10081529B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F59FFCC1800EFD10081529B /* CoreData.framework */; };
 		2F59FFF01800EFD10081529B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2F59FFEE1800EFD10081529B /* InfoPlist.strings */; };
 		2F59FFF21800EFD10081529B /* moodmusic_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F59FFF11800EFD10081529B /* moodmusic_iosTests.m */; };
+		2F9CDF8E1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F9CDF8C1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.m */; };
+		2F9CDF8F1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F9CDF8D1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.xib */; };
+		2F9CDF91180146CC0056A9C2 /* jawbone-up-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F9CDF90180146CC0056A9C2 /* jawbone-up-4.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,10 @@
 		2F59FFED1800EFD10081529B /* moodmusic-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "moodmusic-iosTests-Info.plist"; sourceTree = "<group>"; };
 		2F59FFEF1800EFD10081529B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2F59FFF11800EFD10081529B /* moodmusic_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = moodmusic_iosTests.m; sourceTree = "<group>"; };
+		2F9CDF8B1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoodMusicJawboneUPConnectViewController.h; sourceTree = "<group>"; };
+		2F9CDF8C1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoodMusicJawboneUPConnectViewController.m; sourceTree = "<group>"; };
+		2F9CDF8D1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoodMusicJawboneUPConnectViewController.xib; sourceTree = "<group>"; };
+		2F9CDF90180146CC0056A9C2 /* jawbone-up-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "jawbone-up-4.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +124,7 @@
 			children = (
 				2F59FFD71800EFD10081529B /* MoodMusicAppDelegate.h */,
 				2F59FFD81800EFD10081529B /* MoodMusicAppDelegate.m */,
+				2F9CDF92180149F90056A9C2 /* MoodMusicJawboneUPConnectViewController */,
 				2F59FFDD1800EFD10081529B /* Images.xcassets */,
 				2F59FFDA1800EFD10081529B /* moodmusic_ios.xcdatamodeld */,
 				2F59FFCF1800EFD10081529B /* Supporting Files */,
@@ -127,6 +135,7 @@
 		2F59FFCF1800EFD10081529B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2F9CDF9318014CC30056A9C2 /* Assets */,
 				2F59FFD01800EFD10081529B /* moodmusic-ios-Info.plist */,
 				2F59FFD11800EFD10081529B /* InfoPlist.strings */,
 				2F59FFD41800EFD10081529B /* main.m */,
@@ -151,6 +160,24 @@
 				2F59FFEE1800EFD10081529B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2F9CDF92180149F90056A9C2 /* MoodMusicJawboneUPConnectViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F9CDF8B1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.h */,
+				2F9CDF8C1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.m */,
+				2F9CDF8D1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.xib */,
+			);
+			name = MoodMusicJawboneUPConnectViewController;
+			sourceTree = "<group>";
+		};
+		2F9CDF9318014CC30056A9C2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2F9CDF90180146CC0056A9C2 /* jawbone-up-4.jpg */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9CDF91180146CC0056A9C2 /* jawbone-up-4.jpg in Resources */,
 				2F59FFD31800EFD10081529B /* InfoPlist.strings in Resources */,
 				2F59FFDE1800EFD10081529B /* Images.xcassets in Resources */,
+				2F9CDF8F1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F9CDF8E1801441A0056A9C2 /* MoodMusicJawboneUPConnectViewController.m in Sources */,
 				2F59FFD51800EFD10081529B /* main.m in Sources */,
 				2F59FFD91800EFD10081529B /* MoodMusicAppDelegate.m in Sources */,
 				2F59FFDC1800EFD10081529B /* moodmusic_ios.xcdatamodeld in Sources */,
@@ -452,6 +482,7 @@
 				2F59FFF71800EFD10081529B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2F59FFF81800EFD10081529B /* Build configuration list for PBXNativeTarget "moodmusic-iosTests" */ = {
 			isa = XCConfigurationList;
@@ -460,6 +491,7 @@
 				2F59FFFA1800EFD10081529B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
