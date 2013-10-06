@@ -8,6 +8,8 @@
 
 #import "MoodMusicJawboneUPConnectViewController.h"
 #import "MoodMusicSession.h"
+#import <SAMWebViewController.h>
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 
 @interface MoodMusicJawboneUPConnectViewController ()
 
@@ -25,7 +27,20 @@
 }
 
 - (IBAction)connect:(id)sender {
-    [[MoodMusicSession sharedSession] fetchID];
+    [[MoodMusicSession sharedSession] fetchIDWithCallback:^{
+        [self auth];
+    }];
+}
+
+- (void)auth {
+    if ([[MoodMusicSession sharedSession] userID] > 0) {
+        SAMWebViewController *authVC = [[SAMWebViewController alloc] init];
+        [[authVC webView] setDelegate:self];
+        
+        [self presentViewController:authVC animated:TRUE completion:^{
+            [[authVC webView] loadURLString:[NSString stringWithFormat:@"%@%d", @"http://69.164.221.75:3000/jawbone/auth/", [[MoodMusicSession sharedSession] userID]]];
+        }];
+    }
 }
 
 - (void)viewDidLoad

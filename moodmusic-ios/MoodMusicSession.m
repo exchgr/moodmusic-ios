@@ -38,12 +38,13 @@
     return [[NSUserDefaults standardUserDefaults] integerForKey:@"userID"];
 }
 
-- (void)fetchID {
+- (void)fetchIDWithCallback:(void(^)())callback {
     if ([self userID] < 1) {
         AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
         [manager POST:@"http://69.164.221.75:3000/user" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
             [self setUserID:[[responseObject objectForKey:@"id"] intValue]];
             NSLog(@"%d", [self userID]);
+            callback();
         } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
             NSLog(@"%@", error);
         }];

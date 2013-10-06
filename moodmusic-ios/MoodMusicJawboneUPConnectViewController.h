@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <SAMWebViewController.h>
 
-@interface MoodMusicJawboneUPConnectViewController : UIViewController
+@interface MoodMusicJawboneUPConnectViewController : UIViewController <SAMWebViewDelegate>
 
 - (IBAction)connect:(id)sender;
 
