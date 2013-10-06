@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7542D97D-428F-4EFC-A44B-A8DCBF156E62</string>
+	<key>IDESourceControlProjectName</key>
+	<string>moodmusic-ios</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B9CB3AD1-458A-4A6E-A022-491A12D267DC</key>
+		<string>ssh://github.com/exchgr/moodmusic-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>moodmusic-ios.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B9CB3AD1-458A-4A6E-A022-491A12D267DC</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/exchgr/moodmusic-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B9CB3AD1-458A-4A6E-A022-491A12D267DC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B9CB3AD1-458A-4A6E-A022-491A12D267DC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>moodmusic-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
