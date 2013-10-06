@@ -29,17 +29,27 @@
     return self;
 }
 
-- (void)fetchID {
-    
-    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
-    [manager POST:@"http://69.164.221.75:3000/user" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
-        [self setUserID:[[responseObject objectForKey:@"id"] intValue]];
-        NSLog(@"%d", [self userID]);
-    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"%@", error);
-    }];
-    
+- (void)setUserID:(NSInteger)userID {
+    [[NSUserDefaults standardUserDefaults] setInteger:userID forKey:@"userID"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+}
 
+- (NSInteger)userID {
+    return [[NSUserDefaults standardUserDefaults] integerForKey:@"userID"];
+}
+
+- (void)fetchID {
+    if ([self userID] < 1) {
+        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+        [manager POST:@"http://69.164.221.75:3000/user" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+            [self setUserID:[[responseObject objectForKey:@"id"] intValue]];
+            NSLog(@"%d", [self userID]);
+        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+            NSLog(@"%@", error);
+        }];
+    } else {
+        NSLog(@"%d", [self userID]);
+    }
 }
 
 @end
