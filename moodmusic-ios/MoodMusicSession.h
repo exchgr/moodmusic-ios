@@ -13,5 +13,6 @@
 @property (nonatomic) NSInteger userID;
 
 + (id)sharedSession;
+- (void)fetchID;
 
 @end

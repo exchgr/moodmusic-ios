@@ -10,4 +10,6 @@
 
 @interface MoodMusicJawboneUPConnectViewController : UIViewController
 
+- (IBAction)connect:(id)sender;
+
 @end

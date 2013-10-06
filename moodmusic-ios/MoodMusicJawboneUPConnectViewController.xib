@@ -20,6 +20,9 @@
                     <state key="normal" title="Connect">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="connect:" destination="-1" eventType="touchUpInside" id="ECS-Dn-zJc"/>
+                    </connections>
                 </button>
                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="JTk-cx-hol">
                     <rect key="frame" x="40" y="246" width="240" height="83"/>

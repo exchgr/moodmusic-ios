@@ -7,6 +7,7 @@
 //
 
 #import "MoodMusicJawboneUPConnectViewController.h"
+#import "MoodMusicSession.h"
 
 @interface MoodMusicJawboneUPConnectViewController ()
 
@@ -21,6 +22,10 @@
         // Custom initialization
     }
     return self;
+}
+
+- (IBAction)connect:(id)sender {
+    [[MoodMusicSession sharedSession] fetchID];
 }
 
 - (void)viewDidLoad

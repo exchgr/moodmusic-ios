@@ -7,6 +7,7 @@
 //
 
 #import "MoodMusicSession.h"
+#import <AFNetworking/AFHTTPRequestOperationManager.h>
 
 @implementation MoodMusicSession
 
@@ -26,6 +27,19 @@
     }
     
     return self;
+}
+
+- (void)fetchID {
+    
+    AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    [manager POST:@"http://69.164.221.75:3000/user" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        [self setUserID:[[responseObject objectForKey:@"id"] intValue]];
+        NSLog(@"%d", [self userID]);
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error);
+    }];
+    
+
 }
 
 @end
