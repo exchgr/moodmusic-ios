@@ -1,0 +1,2 @@
+# Mood Music iOS app
+Mood Music is an app that creates Spotify playlists based on your mood, which comes in a quantified form from a Jawbone UP.
